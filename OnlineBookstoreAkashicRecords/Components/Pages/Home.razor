@@ -1,0 +1,152 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Online Bookstore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">Akashic Records</a></div>
+            <br>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="#">BestSellers</a>
+                    <ul class="sellers-box">
+                        <div class="content">
+                            <ul class="bestsellers-list">
+                                <div class="book-item active">
+                                    <img src="Book Covers/To Kill A Mockingbird.jpg" alt="To Kill a Mockingbird">
+                                    <div class="book-details">
+                                        <h3>To Kill a Mockingbird</h3>
+                                        <p>Author: Harper Lee</p>
+                                        <p>Genres: Fiction, Classics</p>
+                                        <p>A gripping story of racial injustice and childhood innocence in the Deep South.</p>
+                                        <a href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="book-item">
+                                    <img src="Book Covers/1984.jpg" alt="1984">
+                                    <div class="book-details">
+                                        <h3>1984</h3>
+                                        <p>Author: George Orwell</p>
+                                        <p>Genres: Dystopian, Science Fiction</p>
+                                        <p>A chilling portrayal of a totalitarian society under constant surveillance.</p>
+                                        <a href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="book-item">
+                                    <img src="Book Covers/Becoming.jpg" alt="Becoming">
+                                    <div class="book-details">
+                                        <h3>Becoming</h3>
+                                        <p>Author: Michelle Obama</p>
+                                        <p>Genres: Memoir, Biography</p>
+                                        <p>An intimate, powerful, and inspiring memoir by the former First Lady of the United States.</p>
+                                        <a href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="book-item">
+                                    <img src="Book Covers/The Hobbit.jpg" alt="The Hobbit">
+                                    <div class="book-details">
+                                        <h3>The Hobbit</h3>
+                                        <p>Author: J.R.R. Tolkien</p>
+                                        <p>Genres: Fantasy, Adventure</p>
+                                        <p>The timeless tale of Bilbo Baggins’ unexpected journey to reclaim a lost kingdom.</p>
+                                        <a href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="book-item">
+                                    <img src="Book Covers/The Da Vinci Code.jpg" alt="The Da Vinci Code">
+                                    <div class="book-details">
+                                        <h3>The Da Vinci Code</h3>
+                                        <p>Author: Dan Brown</p>
+                                        <p>Genres: Thriller, Mystery</p>
+                                        <p>A thrilling puzzle involving historical secrets, cryptic codes, and conspiracy theories.</p>
+                                        <a href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                                <button class="prev" onclick="changeBook(-1)">&#10094;</button>
+                                <button class="next" onclick="changeBook(1)">&#10095;</button>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">New Releases</a>
+                    <ul class="drop-menu">
+                        <li><a href="#">Winter 2024</a></li>
+                        <li><a href="#">Fall 2024</a></li>
+                        <li><a href="#">Spring 2024</a></li>
+                        <li><a href="#">Summer 2024</a></li>
+                        <b><a href="#">Show More</a></b>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Categories</a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <header>Fiction</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Young Adults</a></li>
+                                    <li><a href="#">Romance</a></li>
+                                    <li><a href="#">Horror</a></li>
+                                    <li><a href="#">Mystery</a></li>
+                                    <li><a href="#">Thriller</a></li>
+                                    <li><a href="#">Historical</a></li>
+                                    <b><a href="#">View All Fiction Categories</a></b>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Non-Fiction</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Biographies</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                    <li><a href="#">Science & Nature</a></li>
+                                    <li><a href="#">Philosophy & Self-Help</a></li>
+                                    <li><a href="#">Business & Economics</a></li>
+                                    <li><a href="#">Health & Wellness</a></li>
+                                    <li><a href="#">Politics & Current Affairs</a></li>
+                                    <li><a href="#">Art & Music</a></li>
+                                    <b><a href="#">View All Non-Fiction Categories</a></b>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Comics</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Superhero</a></li>
+                                    <li><a href="#">Graphic Novels</a></li>
+                                    <li><a href="#">Comic Strips</a></li>
+                                    <li><a href="#">Manga</a></li>
+                                    <li><a href="#">Manhwa</a></li>
+                                    <b><a href="#">View All Comics Categories</a></b>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Children's Books</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Picture Books</a></li>
+                                    <li><a href="#">Pop-Up Books</a></li>
+                                    <li><a href="#">Box Sets</a></li>
+                                    <b><a href="#">View All Kids Categories</a></b>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
