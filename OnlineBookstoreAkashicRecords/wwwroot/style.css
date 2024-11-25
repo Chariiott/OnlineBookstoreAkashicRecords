@@ -30,6 +30,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        top: 100%;
     }
 
 .wrapper .logo a {
