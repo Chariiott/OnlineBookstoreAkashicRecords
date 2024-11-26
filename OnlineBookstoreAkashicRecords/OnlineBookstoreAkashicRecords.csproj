@@ -6,4 +6,28 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\Book Covers\1984.jpg" />
+    <Content Remove="wwwroot\Book Covers\Becoming.jpg" />
+    <Content Remove="wwwroot\Book Covers\The Da Vinci Code.jpg" />
+    <Content Remove="wwwroot\Book Covers\The Hobbit.jpg" />
+    <Content Remove="wwwroot\Book Covers\To Kill A Mockingbird.jpg" />
+    <Content Remove="wwwroot\script.js" />
+    <Content Remove="wwwroot\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Akashic\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Book Covers\1984.jpg" />
+    <None Include="wwwroot\Book Covers\Becoming.jpg" />
+    <None Include="wwwroot\Book Covers\The Da Vinci Code.jpg" />
+    <None Include="wwwroot\Book Covers\The Hobbit.jpg" />
+    <None Include="wwwroot\Book Covers\To Kill A Mockingbird.jpg" />
+    <None Include="wwwroot\script.js" />
+    <None Include="wwwroot\style.css" />
+  </ItemGroup>
+
 </Project>

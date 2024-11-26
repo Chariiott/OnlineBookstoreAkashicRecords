@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +10,9 @@
 
 /* Navigation Bar */
 
-nav{
+nav {
     background-color: #E7D4B5;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 999;
     height: 65px;
@@ -19,40 +20,41 @@ nav{
     font-weight: 600;
 }
 
-nav .wrapper{
-    position: relative;
-    background-color: #E7D4B5;
-    max-width: 1250px;
-    padding: 0 30px;
-    height: 65px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    nav .wrapper {
+        position: relative;
+        background-color: #E7D4B5;
+        max-width: 1250px;
+        padding: 0px;
+        height: 65px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 100%;
+    }
 
-}
-.wrapper .logo a{
+.wrapper .logo a {
     color: #000;
     text-decoration: none;
     font-size: 27px;
 }
 
-.nav-links li{
+.nav-links li {
     list-style: none;
 }
 
-.nav-links li a{
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 9px 15px;
-    border-radius: 5px;
-}
+    .nav-links li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 9px 15px;
+        border-radius: 5px;
+    }
 
-.nav-links li a:hover{
-    background: #F1E4CC;
-}
+        .nav-links li a:hover {
+            background: #F1E4CC;
+        }
 
 .wrapper .nav-links {
     display: inline-flex;
@@ -65,7 +67,7 @@ nav .wrapper{
 
 /* Dropdown */
 
-.nav-links .drop-menu{
+.nav-links .drop-menu {
     background-color: #E7D4B5;
     width: 180px;
     top: 85px;
@@ -75,14 +77,14 @@ nav .wrapper{
     visibility: hidden;
 }
 
-.nav-links li:hover .drop-menu{
+.nav-links li:hover .drop-menu {
     top: 65px;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
 }
 
-.drop-menu li a{
+.drop-menu li a {
     width: 100%;
     display: block;
     padding: 0 0 0 15px;
@@ -99,58 +101,58 @@ nav .wrapper{
     opacity: 0;
 }
 
-.mega-box .content {
-    background-color: #E7D4B5;
-    padding: 25px 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
+    .mega-box .content {
+        background-color: #E7D4B5;
+        padding: 25px 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-.mega-box li a{
-    width: 100%;
-    display: block;
-    padding: 0 0 0 15px;
-    font-weight: 400;
-    border-radius: 0px;
-}
+    .mega-box li a {
+        width: 100%;
+        display: block;
+        padding: 0 0 0 15px;
+        font-weight: 400;
+        border-radius: 0px;
+    }
 
-.nav-links li:hover .mega-box{
+.nav-links li:hover .mega-box {
     visibility: visible;
     opacity: 1;
     top: 65px;
     transition: all 0.5s ease;
 }
 
-.content .row{
+.content .row {
     width: calc(25% - 30px);
     line-height: 45px;
 }
 
-.content .row header {
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration-line: underline;
-}
+    .content .row header {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        text-decoration-line: underline;
+    }
 
-.content .row .mega-links {
-    margin-left: -40px;
-    border-left: 1px solid rba(255, 255, 255, 0.09);
-}
+    .content .row .mega-links {
+        margin-left: -40px;
+        border-left: 1px solid rba(255, 255, 255, 0.09);
+    }
 
-.row .mega-links li{
+.row .mega-links li {
     padding: 0 20px;
 }
 
-.row .mega-links li a{
-    padding: 0 0 0 15px;
-    color: #000;
-    font-size: 17px;
-    display: block;
-}
+    .row .mega-links li a {
+        padding: 0 0 0 15px;
+        color: #000;
+        font-size: 17px;
+        display: block;
+    }
 
-.row .mega-links b a{
+.row .mega-links b a {
     padding: 0 0 0 15px;
     color: #000;
     font-size: 19px;
@@ -164,8 +166,8 @@ nav .wrapper{
 .sellers-box {
     position: absolute;
     top: 85px;
-    width: 85%;               /* Further expanded width */
-    height: 450px;            /* Further expanded height */
+    width: 85%; /* Further expanded width */
+    height: 450px; /* Further expanded height */
     left: 7.5%;
     visibility: hidden;
     opacity: 0;
@@ -176,13 +178,13 @@ nav .wrapper{
     padding: 25px;
 }
 
-.sellers-box .content {
-    display: flex;
-    justify-content: center; /* Centers the .bestsellers-list */
-    align-items: center;
-    background-color: #E7D4B5;
-    padding: 25px 20px;
-}
+    .sellers-box .content {
+        display: flex;
+        justify-content: center; /* Centers the .bestsellers-list */
+        align-items: center;
+        background-color: #E7D4B5;
+        padding: 25px 20px;
+    }
 
 .nav-links li:hover .sellers-box {
     visibility: visible;
@@ -213,20 +215,20 @@ nav .wrapper{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.book-item.active {
-    display: flex;
-    transform: scale(1.1);
-    opacity: 1;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    .book-item.active {
+        display: flex;
+        transform: scale(1.1);
+        opacity: 1;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.book-item:not(.active) {
-    opacity: 0.5;
-    transform: scale (0.9);
-}
+    .book-item:not(.active) {
+        opacity: 0.5;
+        transform: scale (0.9);
+    }
 
 .bestsellers-list li {
     margin: 10px;
@@ -243,6 +245,7 @@ nav .wrapper{
     transition: right 0.3s ease;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1)
 }
+
 .book-details h3 {
     font-size: 20px;
     margin-bottom: 8px;
